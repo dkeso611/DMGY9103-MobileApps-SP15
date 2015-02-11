@@ -165,7 +165,7 @@
 			attributes = {
 				CLASSPREFIX = BNR;
 				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = "Big Nerd Ranch";
+				ORGANIZATIONNAME = "DK Media Group";
 				TargetAttributes = {
 					C2C8992C1A8AD75700698083 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -405,6 +405,7 @@
 				C2C899521A8AD75700698083 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C2C899531A8AD75700698083 /* Build configuration list for PBXNativeTarget "QuizTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +414,7 @@
 				C2C899551A8AD75700698083 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
