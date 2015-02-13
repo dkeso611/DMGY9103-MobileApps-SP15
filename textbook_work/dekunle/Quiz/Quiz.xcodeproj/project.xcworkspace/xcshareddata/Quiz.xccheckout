@@ -14,11 +14,11 @@
 		<string>https://github.com/dkeso611/DMGY9103-MobileApps-SP15.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>textbook_work/dekunle/Quiz/Quiz/Quiz.xcodeproj</string>
+	<string>textbook_work/dekunle/Quiz/Quiz.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>17B896449DBD7FEF966C16F8C168EDB445C4FA07</key>
-		<string>../../../../../..</string>
+		<string>../../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/dkeso611/DMGY9103-MobileApps-SP15.git</string>
