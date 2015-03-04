@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C209AD461AA6475600DA8095 /* BNRReminderViewConroller.m in Sources */ = {isa = PBXBuildFile; fileRef = C209AD451AA6475500DA8095 /* BNRReminderViewConroller.m */; };
+		C209AD481AA64B6700DA8095 /* BNRReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C209AD471AA64B6700DA8095 /* BNRReminderViewController.xib */; };
+		C209AD4D1AA6694700DA8095 /* Hypno.png in Resources */ = {isa = PBXBuildFile; fileRef = C209AD491AA6694700DA8095 /* Hypno.png */; };
+		C209AD4E1AA6694700DA8095 /* Hypno@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C209AD4A1AA6694700DA8095 /* Hypno@2x.png */; };
+		C209AD4F1AA6694700DA8095 /* Time.png in Resources */ = {isa = PBXBuildFile; fileRef = C209AD4B1AA6694700DA8095 /* Time.png */; };
+		C209AD501AA6694700DA8095 /* Time@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C209AD4C1AA6694700DA8095 /* Time@2x.png */; };
+		C265C3931AA55FC200538AA5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C265C3921AA55FC200538AA5 /* main.m */; };
+		C265C3961AA55FC200538AA5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C265C3951AA55FC200538AA5 /* AppDelegate.m */; };
+		C265C39E1AA55FC200538AA5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C265C39D1AA55FC200538AA5 /* Images.xcassets */; };
+		C265C3A11AA55FC200538AA5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C265C39F1AA55FC200538AA5 /* LaunchScreen.xib */; };
+		C265C3AD1AA55FC200538AA5 /* HypnoNerdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C265C3AC1AA55FC200538AA5 /* HypnoNerdTests.m */; };
+		C265C3B81AA5610000538AA5 /* BNRHypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = C265C3B71AA5610000538AA5 /* BNRHypnosisView.m */; };
+		C265C3BD1AA561F100538AA5 /* BNRHypnosisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C265C3BC1AA561F100538AA5 /* BNRHypnosisViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C265C3A71AA55FC200538AA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C265C3851AA55FC100538AA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C265C38C1AA55FC100538AA5;
+			remoteInfo = HypnoNerd;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C209AD441AA6475500DA8095 /* BNRReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRReminderViewController.h; sourceTree = "<group>"; };
+		C209AD451AA6475500DA8095 /* BNRReminderViewConroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRReminderViewConroller.m; sourceTree = "<group>"; };
+		C209AD471AA64B6700DA8095 /* BNRReminderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRReminderViewController.xib; sourceTree = "<group>"; };
+		C209AD491AA6694700DA8095 /* Hypno.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hypno.png; sourceTree = "<group>"; };
+		C209AD4A1AA6694700DA8095 /* Hypno@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hypno@2x.png"; sourceTree = "<group>"; };
+		C209AD4B1AA6694700DA8095 /* Time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Time.png; sourceTree = "<group>"; };
+		C209AD4C1AA6694700DA8095 /* Time@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Time@2x.png"; sourceTree = "<group>"; };
+		C265C38D1AA55FC100538AA5 /* HypnoNerd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HypnoNerd.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C265C3911AA55FC200538AA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C265C3921AA55FC200538AA5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C265C3941AA55FC200538AA5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C265C3951AA55FC200538AA5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C265C39D1AA55FC200538AA5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C265C3A01AA55FC200538AA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C265C3A61AA55FC200538AA5 /* HypnoNerdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HypnoNerdTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C265C3AB1AA55FC200538AA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C265C3AC1AA55FC200538AA5 /* HypnoNerdTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HypnoNerdTests.m; sourceTree = "<group>"; };
+		C265C3B61AA5610000538AA5 /* BNRHypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRHypnosisView.h; sourceTree = "<group>"; };
+		C265C3B71AA5610000538AA5 /* BNRHypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRHypnosisView.m; sourceTree = "<group>"; };
+		C265C3BB1AA561F100538AA5 /* BNRHypnosisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BNRHypnosisViewController.h; path = ../BNRHypnosisViewController.h; sourceTree = "<group>"; };
+		C265C3BC1AA561F100538AA5 /* BNRHypnosisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BNRHypnosisViewController.m; path = ../BNRHypnosisViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C265C38A1AA55FC100538AA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C265C3A31AA55FC200538AA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C265C3841AA55FC100538AA5 = {
+			isa = PBXGroup;
+			children = (
+				C265C38F1AA55FC100538AA5 /* HypnoNerd */,
+				C265C3A91AA55FC200538AA5 /* HypnoNerdTests */,
+				C265C38E1AA55FC100538AA5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C265C38E1AA55FC100538AA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C265C38D1AA55FC100538AA5 /* HypnoNerd.app */,
+				C265C3A61AA55FC200538AA5 /* HypnoNerdTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C265C38F1AA55FC100538AA5 /* HypnoNerd */ = {
+			isa = PBXGroup;
+			children = (
+				C209AD491AA6694700DA8095 /* Hypno.png */,
+				C209AD4A1AA6694700DA8095 /* Hypno@2x.png */,
+				C209AD4B1AA6694700DA8095 /* Time.png */,
+				C209AD4C1AA6694700DA8095 /* Time@2x.png */,
+				C265C3941AA55FC200538AA5 /* AppDelegate.h */,
+				C265C3951AA55FC200538AA5 /* AppDelegate.m */,
+				C265C3B61AA5610000538AA5 /* BNRHypnosisView.h */,
+				C265C3B71AA5610000538AA5 /* BNRHypnosisView.m */,
+				C265C3BB1AA561F100538AA5 /* BNRHypnosisViewController.h */,
+				C265C3BC1AA561F100538AA5 /* BNRHypnosisViewController.m */,
+				C209AD441AA6475500DA8095 /* BNRReminderViewController.h */,
+				C209AD451AA6475500DA8095 /* BNRReminderViewConroller.m */,
+				C209AD471AA64B6700DA8095 /* BNRReminderViewController.xib */,
+				C265C39F1AA55FC200538AA5 /* LaunchScreen.xib */,
+				C265C39D1AA55FC200538AA5 /* Images.xcassets */,
+				C265C3901AA55FC200538AA5 /* Supporting Files */,
+			);
+			path = HypnoNerd;
+			sourceTree = "<group>";
+		};
+		C265C3901AA55FC200538AA5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C265C3911AA55FC200538AA5 /* Info.plist */,
+				C265C3921AA55FC200538AA5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C265C3A91AA55FC200538AA5 /* HypnoNerdTests */ = {
+			isa = PBXGroup;
+			children = (
+				C265C3AC1AA55FC200538AA5 /* HypnoNerdTests.m */,
+				C265C3AA1AA55FC200538AA5 /* Supporting Files */,
+			);
+			path = HypnoNerdTests;
+			sourceTree = "<group>";
+		};
+		C265C3AA1AA55FC200538AA5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C265C3AB1AA55FC200538AA5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C265C38C1AA55FC100538AA5 /* HypnoNerd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C265C3B01AA55FC200538AA5 /* Build configuration list for PBXNativeTarget "HypnoNerd" */;
+			buildPhases = (
+				C265C3891AA55FC100538AA5 /* Sources */,
+				C265C38A1AA55FC100538AA5 /* Frameworks */,
+				C265C38B1AA55FC100538AA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HypnoNerd;
+			productName = HypnoNerd;
+			productReference = C265C38D1AA55FC100538AA5 /* HypnoNerd.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C265C3A51AA55FC200538AA5 /* HypnoNerdTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C265C3B31AA55FC200538AA5 /* Build configuration list for PBXNativeTarget "HypnoNerdTests" */;
+			buildPhases = (
+				C265C3A21AA55FC200538AA5 /* Sources */,
+				C265C3A31AA55FC200538AA5 /* Frameworks */,
+				C265C3A41AA55FC200538AA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C265C3A81AA55FC200538AA5 /* PBXTargetDependency */,
+			);
+			name = HypnoNerdTests;
+			productName = HypnoNerdTests;
+			productReference = C265C3A61AA55FC200538AA5 /* HypnoNerdTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C265C3851AA55FC100538AA5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "DK Media";
+				TargetAttributes = {
+					C265C38C1AA55FC100538AA5 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					C265C3A51AA55FC200538AA5 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = C265C38C1AA55FC100538AA5;
+					};
+				};
+			};
+			buildConfigurationList = C265C3881AA55FC100538AA5 /* Build configuration list for PBXProject "HypnoNerd" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C265C3841AA55FC100538AA5;
+			productRefGroup = C265C38E1AA55FC100538AA5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C265C38C1AA55FC100538AA5 /* HypnoNerd */,
+				C265C3A51AA55FC200538AA5 /* HypnoNerdTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C265C38B1AA55FC100538AA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C209AD501AA6694700DA8095 /* Time@2x.png in Resources */,
+				C209AD4F1AA6694700DA8095 /* Time.png in Resources */,
+				C209AD481AA64B6700DA8095 /* BNRReminderViewController.xib in Resources */,
+				C265C3A11AA55FC200538AA5 /* LaunchScreen.xib in Resources */,
+				C209AD4D1AA6694700DA8095 /* Hypno.png in Resources */,
+				C209AD4E1AA6694700DA8095 /* Hypno@2x.png in Resources */,
+				C265C39E1AA55FC200538AA5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C265C3A41AA55FC200538AA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C265C3891AA55FC100538AA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C265C3BD1AA561F100538AA5 /* BNRHypnosisViewController.m in Sources */,
+				C265C3961AA55FC200538AA5 /* AppDelegate.m in Sources */,
+				C265C3931AA55FC200538AA5 /* main.m in Sources */,
+				C209AD461AA6475600DA8095 /* BNRReminderViewConroller.m in Sources */,
+				C265C3B81AA5610000538AA5 /* BNRHypnosisView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C265C3A21AA55FC200538AA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C265C3AD1AA55FC200538AA5 /* HypnoNerdTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C265C3A81AA55FC200538AA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C265C38C1AA55FC100538AA5 /* HypnoNerd */;
+			targetProxy = C265C3A71AA55FC200538AA5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C265C39F1AA55FC200538AA5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C265C3A01AA55FC200538AA5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C265C3AE1AA55FC200538AA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C265C3AF1AA55FC200538AA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C265C3B11AA55FC200538AA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HypnoNerd/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C265C3B21AA55FC200538AA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HypnoNerd/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C265C3B41AA55FC200538AA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HypnoNerdTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HypnoNerd.app/HypnoNerd";
+			};
+			name = Debug;
+		};
+		C265C3B51AA55FC200538AA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HypnoNerdTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HypnoNerd.app/HypnoNerd";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C265C3881AA55FC100538AA5 /* Build configuration list for PBXProject "HypnoNerd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C265C3AE1AA55FC200538AA5 /* Debug */,
+				C265C3AF1AA55FC200538AA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C265C3B01AA55FC200538AA5 /* Build configuration list for PBXNativeTarget "HypnoNerd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C265C3B11AA55FC200538AA5 /* Debug */,
+				C265C3B21AA55FC200538AA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C265C3B31AA55FC200538AA5 /* Build configuration list for PBXNativeTarget "HypnoNerdTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C265C3B41AA55FC200538AA5 /* Debug */,
+				C265C3B51AA55FC200538AA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C265C3851AA55FC100538AA5 /* Project object */;
+}
