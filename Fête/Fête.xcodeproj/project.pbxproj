@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C24B4C331ADF5304008D8E85 /* glowparty.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C24B4C321ADF5304008D8E85 /* glowparty.jpg */; };
+		C2929D981ACC9E43005FFDC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2929D971ACC9E43005FFDC5 /* main.m */; };
+		C2929D9B1ACC9E43005FFDC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2929D9A1ACC9E43005FFDC5 /* AppDelegate.m */; };
+		C2929DA11ACC9E43005FFDC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2929D9F1ACC9E43005FFDC5 /* Main.storyboard */; };
+		C2929DA31ACC9E43005FFDC5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2929DA21ACC9E43005FFDC5 /* Images.xcassets */; };
+		C2929DA61ACC9E43005FFDC5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2929DA41ACC9E43005FFDC5 /* LaunchScreen.xib */; };
+		C2929DB21ACC9E43005FFDC5 /* Fe_teTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2929DB11ACC9E43005FFDC5 /* Fe_teTests.m */; };
+		C2ADBDEE1ADB1F4000AB6F8B /* ThrowAFeteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2ADBDED1ADB1F4000AB6F8B /* ThrowAFeteViewController.m */; };
+		C2ADBDF41ADB2CC700AB6F8B /* UpcomingFetesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2ADBDF31ADB2CC700AB6F8B /* UpcomingFetesTableViewController.m */; };
+		C2ADBDF71ADB407700AB6F8B /* aFete.m in Sources */ = {isa = PBXBuildFile; fileRef = C2ADBDF61ADB407700AB6F8B /* aFete.m */; };
+		C2ADBDFD1ADCDA3E00AB6F8B /* FeteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2ADBDFC1ADCDA3E00AB6F8B /* FeteCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C2929DAC1ACC9E43005FFDC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2929D8A1ACC9E42005FFDC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2929D911ACC9E42005FFDC5;
+			remoteInfo = "Fête";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C24B4C321ADF5304008D8E85 /* glowparty.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = glowparty.jpg; sourceTree = "<group>"; };
+		C2929D921ACC9E43005FFDC5 /* Fête.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fête.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2929D961ACC9E43005FFDC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2929D971ACC9E43005FFDC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C2929D991ACC9E43005FFDC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C2929D9A1ACC9E43005FFDC5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C2929DA01ACC9E43005FFDC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C2929DA21ACC9E43005FFDC5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C2929DA51ACC9E43005FFDC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C2929DAB1ACC9E43005FFDC5 /* FêteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FêteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2929DB01ACC9E43005FFDC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2929DB11ACC9E43005FFDC5 /* Fe_teTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fe_teTests.m; sourceTree = "<group>"; };
+		C2ADBDEC1ADB1F4000AB6F8B /* ThrowAFeteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThrowAFeteViewController.h; path = ../ThrowAFeteViewController.h; sourceTree = "<group>"; };
+		C2ADBDED1ADB1F4000AB6F8B /* ThrowAFeteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThrowAFeteViewController.m; path = ../ThrowAFeteViewController.m; sourceTree = "<group>"; };
+		C2ADBDF21ADB2CC700AB6F8B /* UpcomingFetesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UpcomingFetesTableViewController.h; path = ../UpcomingFetesTableViewController.h; sourceTree = "<group>"; };
+		C2ADBDF31ADB2CC700AB6F8B /* UpcomingFetesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UpcomingFetesTableViewController.m; path = ../UpcomingFetesTableViewController.m; sourceTree = "<group>"; };
+		C2ADBDF51ADB407700AB6F8B /* aFete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aFete.h; sourceTree = "<group>"; };
+		C2ADBDF61ADB407700AB6F8B /* aFete.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = aFete.m; sourceTree = "<group>"; };
+		C2ADBDFB1ADCDA3E00AB6F8B /* FeteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeteCell.h; sourceTree = "<group>"; };
+		C2ADBDFC1ADCDA3E00AB6F8B /* FeteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeteCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2929D8F1ACC9E42005FFDC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2929DA81ACC9E43005FFDC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C24B4C311ADF4F61008D8E85 /* FetePictures */ = {
+			isa = PBXGroup;
+			children = (
+				C24B4C321ADF5304008D8E85 /* glowparty.jpg */,
+			);
+			name = FetePictures;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		C2929D891ACC9E42005FFDC5 = {
+			isa = PBXGroup;
+			children = (
+				C2929D941ACC9E43005FFDC5 /* Fête */,
+				C2929DAE1ACC9E43005FFDC5 /* FêteTests */,
+				C2929D931ACC9E43005FFDC5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2929D931ACC9E43005FFDC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2929D921ACC9E43005FFDC5 /* Fête.app */,
+				C2929DAB1ACC9E43005FFDC5 /* FêteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2929D941ACC9E43005FFDC5 /* Fête */ = {
+			isa = PBXGroup;
+			children = (
+				C24B4C311ADF4F61008D8E85 /* FetePictures */,
+				C2929D991ACC9E43005FFDC5 /* AppDelegate.h */,
+				C2929D9A1ACC9E43005FFDC5 /* AppDelegate.m */,
+				C2ADBDF51ADB407700AB6F8B /* aFete.h */,
+				C2ADBDF61ADB407700AB6F8B /* aFete.m */,
+				C2ADBDF21ADB2CC700AB6F8B /* UpcomingFetesTableViewController.h */,
+				C2ADBDF31ADB2CC700AB6F8B /* UpcomingFetesTableViewController.m */,
+				C2ADBDFB1ADCDA3E00AB6F8B /* FeteCell.h */,
+				C2ADBDFC1ADCDA3E00AB6F8B /* FeteCell.m */,
+				C2ADBDEC1ADB1F4000AB6F8B /* ThrowAFeteViewController.h */,
+				C2ADBDED1ADB1F4000AB6F8B /* ThrowAFeteViewController.m */,
+				C2929D9F1ACC9E43005FFDC5 /* Main.storyboard */,
+				C2929DA21ACC9E43005FFDC5 /* Images.xcassets */,
+				C2929DA41ACC9E43005FFDC5 /* LaunchScreen.xib */,
+				C2929D951ACC9E43005FFDC5 /* Supporting Files */,
+			);
+			path = "Fête";
+			sourceTree = "<group>";
+		};
+		C2929D951ACC9E43005FFDC5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2929D961ACC9E43005FFDC5 /* Info.plist */,
+				C2929D971ACC9E43005FFDC5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C2929DAE1ACC9E43005FFDC5 /* FêteTests */ = {
+			isa = PBXGroup;
+			children = (
+				C2929DB11ACC9E43005FFDC5 /* Fe_teTests.m */,
+				C2929DAF1ACC9E43005FFDC5 /* Supporting Files */,
+			);
+			path = "FêteTests";
+			sourceTree = "<group>";
+		};
+		C2929DAF1ACC9E43005FFDC5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2929DB01ACC9E43005FFDC5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C2929D911ACC9E42005FFDC5 /* Fête */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2929DB51ACC9E43005FFDC5 /* Build configuration list for PBXNativeTarget "Fête" */;
+			buildPhases = (
+				C2929D8E1ACC9E42005FFDC5 /* Sources */,
+				C2929D8F1ACC9E42005FFDC5 /* Frameworks */,
+				C2929D901ACC9E42005FFDC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fête";
+			productName = "Fête";
+			productReference = C2929D921ACC9E43005FFDC5 /* Fête.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C2929DAA1ACC9E43005FFDC5 /* FêteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2929DB81ACC9E43005FFDC5 /* Build configuration list for PBXNativeTarget "FêteTests" */;
+			buildPhases = (
+				C2929DA71ACC9E43005FFDC5 /* Sources */,
+				C2929DA81ACC9E43005FFDC5 /* Frameworks */,
+				C2929DA91ACC9E43005FFDC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2929DAD1ACC9E43005FFDC5 /* PBXTargetDependency */,
+			);
+			name = "FêteTests";
+			productName = "FêteTests";
+			productReference = C2929DAB1ACC9E43005FFDC5 /* FêteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2929D8A1ACC9E42005FFDC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Suru Media";
+				TargetAttributes = {
+					C2929D911ACC9E42005FFDC5 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					C2929DAA1ACC9E43005FFDC5 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = C2929D911ACC9E42005FFDC5;
+					};
+				};
+			};
+			buildConfigurationList = C2929D8D1ACC9E42005FFDC5 /* Build configuration list for PBXProject "Fête" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C2929D891ACC9E42005FFDC5;
+			productRefGroup = C2929D931ACC9E43005FFDC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2929D911ACC9E42005FFDC5 /* Fête */,
+				C2929DAA1ACC9E43005FFDC5 /* FêteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2929D901ACC9E42005FFDC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2929DA11ACC9E43005FFDC5 /* Main.storyboard in Resources */,
+				C24B4C331ADF5304008D8E85 /* glowparty.jpg in Resources */,
+				C2929DA61ACC9E43005FFDC5 /* LaunchScreen.xib in Resources */,
+				C2929DA31ACC9E43005FFDC5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2929DA91ACC9E43005FFDC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2929D8E1ACC9E42005FFDC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2929D9B1ACC9E43005FFDC5 /* AppDelegate.m in Sources */,
+				C2ADBDF41ADB2CC700AB6F8B /* UpcomingFetesTableViewController.m in Sources */,
+				C2ADBDEE1ADB1F4000AB6F8B /* ThrowAFeteViewController.m in Sources */,
+				C2ADBDF71ADB407700AB6F8B /* aFete.m in Sources */,
+				C2929D981ACC9E43005FFDC5 /* main.m in Sources */,
+				C2ADBDFD1ADCDA3E00AB6F8B /* FeteCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2929DA71ACC9E43005FFDC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2929DB21ACC9E43005FFDC5 /* Fe_teTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C2929DAD1ACC9E43005FFDC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2929D911ACC9E42005FFDC5 /* Fête */;
+			targetProxy = C2929DAC1ACC9E43005FFDC5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C2929D9F1ACC9E43005FFDC5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2929DA01ACC9E43005FFDC5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C2929DA41ACC9E43005FFDC5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2929DA51ACC9E43005FFDC5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C2929DB31ACC9E43005FFDC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C2929DB41ACC9E43005FFDC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C2929DB61ACC9E43005FFDC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Fête/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C2929DB71ACC9E43005FFDC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Fête/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C2929DB91ACC9E43005FFDC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FêteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fête.app/Fête";
+			};
+			name = Debug;
+		};
+		C2929DBA1ACC9E43005FFDC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FêteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fête.app/Fête";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2929D8D1ACC9E42005FFDC5 /* Build configuration list for PBXProject "Fête" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2929DB31ACC9E43005FFDC5 /* Debug */,
+				C2929DB41ACC9E43005FFDC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2929DB51ACC9E43005FFDC5 /* Build configuration list for PBXNativeTarget "Fête" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2929DB61ACC9E43005FFDC5 /* Debug */,
+				C2929DB71ACC9E43005FFDC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2929DB81ACC9E43005FFDC5 /* Build configuration list for PBXNativeTarget "FêteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2929DB91ACC9E43005FFDC5 /* Debug */,
+				C2929DBA1ACC9E43005FFDC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2929D8A1ACC9E42005FFDC5 /* Project object */;
+}
