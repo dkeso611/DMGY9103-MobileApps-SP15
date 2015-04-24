@@ -24,5 +24,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *flyerLabel;
 
+@property (weak, nonatomic) IBOutlet UILabel *priceLabel;
+
 
 @end

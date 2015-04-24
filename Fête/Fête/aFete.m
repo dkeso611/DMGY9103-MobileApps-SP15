@@ -28,7 +28,7 @@
               time:(NSString *)time_
            musicBy:(NSMutableArray *)musicBy_
              price:(NSString *)price_
-          hashtags:(NSMutableArray *)hashtags_;
+          hashtags:(NSMutableArray *)hashtags_
 {
     self = [self init];
     if (self) {
@@ -43,6 +43,7 @@
         self.hashtags = hashtags_;
         
     }
+    
     return self;
 }
 

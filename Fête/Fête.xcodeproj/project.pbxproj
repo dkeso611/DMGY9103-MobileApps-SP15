@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C247C7F51AE873B00053D228 /* allwhite.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C247C7F41AE873B00053D228 /* allwhite.jpg */; };
+		C247C7F71AE874320053D228 /* taurus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C247C7F61AE874320053D228 /* taurus.jpg */; };
 		C24B4C331ADF5304008D8E85 /* glowparty.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C24B4C321ADF5304008D8E85 /* glowparty.jpg */; };
 		C2929D981ACC9E43005FFDC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2929D971ACC9E43005FFDC5 /* main.m */; };
 		C2929D9B1ACC9E43005FFDC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2929D9A1ACC9E43005FFDC5 /* AppDelegate.m */; };
@@ -31,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C247C7F41AE873B00053D228 /* allwhite.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = allwhite.jpg; sourceTree = "<group>"; };
+		C247C7F61AE874320053D228 /* taurus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = taurus.jpg; sourceTree = "<group>"; };
 		C24B4C321ADF5304008D8E85 /* glowparty.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = glowparty.jpg; sourceTree = "<group>"; };
 		C2929D921ACC9E43005FFDC5 /* Fête.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fête.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2929D961ACC9E43005FFDC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 		C24B4C311ADF4F61008D8E85 /* FetePictures */ = {
 			isa = PBXGroup;
 			children = (
+				C247C7F41AE873B00053D228 /* allwhite.jpg */,
+				C247C7F61AE874320053D228 /* taurus.jpg */,
 				C24B4C321ADF5304008D8E85 /* glowparty.jpg */,
 			);
 			name = FetePictures;
@@ -106,10 +112,10 @@
 				C2929D9A1ACC9E43005FFDC5 /* AppDelegate.m */,
 				C2ADBDF51ADB407700AB6F8B /* aFete.h */,
 				C2ADBDF61ADB407700AB6F8B /* aFete.m */,
-				C2ADBDF21ADB2CC700AB6F8B /* UpcomingFetesTableViewController.h */,
-				C2ADBDF31ADB2CC700AB6F8B /* UpcomingFetesTableViewController.m */,
 				C2ADBDFB1ADCDA3E00AB6F8B /* FeteCell.h */,
 				C2ADBDFC1ADCDA3E00AB6F8B /* FeteCell.m */,
+				C2ADBDF21ADB2CC700AB6F8B /* UpcomingFetesTableViewController.h */,
+				C2ADBDF31ADB2CC700AB6F8B /* UpcomingFetesTableViewController.m */,
 				C2ADBDEC1ADB1F4000AB6F8B /* ThrowAFeteViewController.h */,
 				C2ADBDED1ADB1F4000AB6F8B /* ThrowAFeteViewController.m */,
 				C2929D9F1ACC9E43005FFDC5 /* Main.storyboard */,
@@ -229,7 +235,9 @@
 				C2929DA11ACC9E43005FFDC5 /* Main.storyboard in Resources */,
 				C24B4C331ADF5304008D8E85 /* glowparty.jpg in Resources */,
 				C2929DA61ACC9E43005FFDC5 /* LaunchScreen.xib in Resources */,
+				C247C7F51AE873B00053D228 /* allwhite.jpg in Resources */,
 				C2929DA31ACC9E43005FFDC5 /* Images.xcassets in Resources */,
+				C247C7F71AE874320053D228 /* taurus.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

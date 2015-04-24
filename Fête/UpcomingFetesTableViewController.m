@@ -42,11 +42,16 @@
 
 - (void)loadInitialData {
     
+    
+    
+    NSDate *now = [[NSDate alloc] init];
+    
+    
     aFete * Fete1 = [[aFete alloc] initWithName:@"Glow Party"
                                           flyer:[UIImage imageNamed:@"glowparty.jpg"]
-                                          promo:@"Team AK"
+                                          promo:@"TeamAK Promotions"
                                        location:@"Mira Lounge"
-                                           date:nil
+                                           date:now
                                            time:nil
                                         musicBy:nil
                                           price:@"$5"
@@ -55,10 +60,10 @@
     [self.Fetes addObject:Fete1];
     
     aFete * Fete2 = [[aFete alloc] initWithName:@"YB's All White Party"
-                                          flyer:nil
+                                          flyer:[UIImage imageNamed:@"allwhite.jpg"]
                                           promo:@"Team YB"
                                        location:@"Santos Party House"
-                                           date:nil
+                                           date:now
                                            time:nil
                                         musicBy:nil
                                           price:@"Free"
@@ -66,11 +71,13 @@
     
     [self.Fetes addObject:Fete2];
     
-    aFete * Fete3 = [[aFete alloc] initWithName:@"Annual Taurus Party"
-                                          flyer:nil
+    
+    
+    aFete * Fete3 = [[aFete alloc] initWithName:@"DJ Tunez 4th Annual Taurus Party"
+                                          flyer:[UIImage imageNamed:@"taurus.jpg"]
                                           promo:@"DJ Tunez Promotion"
                                        location:@"Milk River"
-                                           date:nil
+                                           date:now
                                            time:nil
                                         musicBy:nil
                                           price:@"Free"
@@ -109,6 +116,23 @@
     cell.flyerLabel.image = Fetes.flyer;
     cell.locationLabel.text = Fetes.location;
     cell.promoLabel.text = Fetes.promo;
+    cell.priceLabel.text = Fetes.price;
+    
+    NSDateFormatter *timeFormat = [[NSDateFormatter alloc] init];
+    [timeFormat setDateFormat:@"HH:mm"];
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"MMM dd, yyyy"];
+    
+//    NSDate *now = [[NSDate alloc] init];
+//    
+//    NSString *timeString = [timeFormat stringFromDate:now];
+    NSLog(@"%@", Fetes.date);
+    NSString *dateString = [dateFormat stringFromDate: Fetes.date];
+    NSString *timeString = [timeFormat stringFromDate: Fetes.date];
+    
+    
+    cell.timeLabel.text = timeString;
+    cell.dateLabel.text = dateString;
 
    return cell;
 }
