@@ -9,10 +9,10 @@
 #import "UpcomingFetesTableViewController.h"
 #import "aFete.h"
 #import "FeteCell.h"
+#import "FetesStore.h"
 
 @interface UpcomingFetesTableViewController ()
 
-@property NSMutableArray *Fetes;
 
 @end
 
@@ -31,7 +31,7 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    self.Fetes = [[NSMutableArray alloc] init];
+    
     [self loadInitialData];
 }
 
@@ -42,48 +42,6 @@
 
 - (void)loadInitialData {
     
-    
-    
-    NSDate *now = [[NSDate alloc] init];
-    
-    
-    aFete * Fete1 = [[aFete alloc] initWithName:@"Glow Party"
-                                          flyer:[UIImage imageNamed:@"glowparty.jpg"]
-                                          promo:@"TeamAK Promotions"
-                                       location:@"Mira Lounge"
-                                           date:now
-                                           time:nil
-                                        musicBy:nil
-                                          price:@"$5"
-                                       hashtags:nil];
-    
-    [self.Fetes addObject:Fete1];
-    
-    aFete * Fete2 = [[aFete alloc] initWithName:@"YB's All White Party"
-                                          flyer:[UIImage imageNamed:@"allwhite.jpg"]
-                                          promo:@"Team YB"
-                                       location:@"Santos Party House"
-                                           date:now
-                                           time:nil
-                                        musicBy:nil
-                                          price:@"Free"
-                                       hashtags:nil];
-    
-    [self.Fetes addObject:Fete2];
-    
-    
-    
-    aFete * Fete3 = [[aFete alloc] initWithName:@"DJ Tunez 4th Annual Taurus Party"
-                                          flyer:[UIImage imageNamed:@"taurus.jpg"]
-                                          promo:@"DJ Tunez Promotion"
-                                       location:@"Milk River"
-                                           date:now
-                                           time:nil
-                                        musicBy:nil
-                                          price:@"Free"
-                                       hashtags:nil];
-    
-    [self.Fetes addObject:Fete3];
     
     
 }
@@ -101,7 +59,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 ////#warning Incomplete method implementation.
    // Return the number of rows in the section.
-  return [self.Fetes count];
+    return [[[FetesStore sharedStore] allFetes] count];
 }
 
 
@@ -109,9 +67,10 @@
          cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     FeteCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FeteCell" forIndexPath:indexPath];
+    
 
     // Configure the cell...
-    aFete *Fetes = [self.Fetes objectAtIndex:indexPath.row];
+    aFete *Fetes = [[[FetesStore sharedStore] allFetes] objectAtIndex:indexPath.row];
     cell.nameLabel.text = Fetes.name;
     cell.flyerLabel.image = Fetes.flyer;
     cell.locationLabel.text = Fetes.location;
@@ -119,20 +78,18 @@
     cell.priceLabel.text = Fetes.price;
     
     NSDateFormatter *timeFormat = [[NSDateFormatter alloc] init];
-    [timeFormat setDateFormat:@"HH:mm"];
+    [timeFormat setDateFormat:@"h:mm a"];
     NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
-    [dateFormat setDateFormat:@"MMM dd, yyyy"];
+    [dateFormat setDateFormat:@"E, MMM dd, yyyy"];
     
-//    NSDate *now = [[NSDate alloc] init];
-//    
-//    NSString *timeString = [timeFormat stringFromDate:now];
+
     NSLog(@"%@", Fetes.date);
     NSString *dateString = [dateFormat stringFromDate: Fetes.date];
     NSString *timeString = [timeFormat stringFromDate: Fetes.date];
     
     
-    cell.timeLabel.text = timeString;
-    cell.dateLabel.text = dateString;
+    cell.timeLabel.text = Fetes.time;
+    cell.dateLabel.text = [dateFormat stringFromDate:Fetes.date];
 
    return cell;
 }

@@ -12,17 +12,6 @@
 
 @interface UpcomingFetesTableViewController : UITableViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
-
-@property (weak, nonatomic) IBOutlet UILabel *promoLabel;
-
-@property (weak, nonatomic) IBOutlet UILabel *locationLabel;
-
-@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
-
-@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
-
-@property (weak, nonatomic) IBOutlet UIImageView *flyerLabel;
 
 
 
