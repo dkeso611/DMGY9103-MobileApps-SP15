@@ -10,15 +10,25 @@
 #import "aFete.h"
 #import "FeteCell.h"
 #import "FetesStore.h"
+#import "FeteDetailViewController.h"
+#import <UIKit/UIKit.h>
+#import "ThrowAFeteViewController.h"
+
 
 @interface UpcomingFetesTableViewController ()
+
 
 
 @end
 
 @implementation UpcomingFetesTableViewController
 
+
+
 - (IBAction)unwindToList:(UIStoryboardSegue *)segue {
+    ThrowAFeteViewController *source = [segue sourceViewController];
+   
+    
     
 }
 
@@ -27,7 +37,7 @@
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
-    
+
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
@@ -70,30 +80,38 @@
     
 
     // Configure the cell...
-    aFete *Fetes = [[[FetesStore sharedStore] allFetes] objectAtIndex:indexPath.row];
-    cell.nameLabel.text = Fetes.name;
-    cell.flyerLabel.image = Fetes.flyer;
-    cell.locationLabel.text = Fetes.location;
-    cell.promoLabel.text = Fetes.promo;
-    cell.priceLabel.text = Fetes.price;
     
     NSDateFormatter *timeFormat = [[NSDateFormatter alloc] init];
     [timeFormat setDateFormat:@"h:mm a"];
     NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
-    [dateFormat setDateFormat:@"E, MMM dd, yyyy"];
-    
-
-    NSLog(@"%@", Fetes.date);
-    NSString *dateString = [dateFormat stringFromDate: Fetes.date];
-    NSString *timeString = [timeFormat stringFromDate: Fetes.date];
+    [dateFormat setDateFormat:@"EEE, MMM d"];
     
     
-    cell.timeLabel.text = Fetes.time;
-    cell.dateLabel.text = [dateFormat stringFromDate:Fetes.date];
+    aFete *fetes = [[[FetesStore sharedStore] allFetes] objectAtIndex:indexPath.row];
+    cell.nameLabel.text = fetes.name;
+    cell.flyerLabel.image = fetes.flyer;
+    cell.locationLabel.text = fetes.location;
+    cell.promoLabel.text = fetes.promo;
+    cell.priceLabel.text = fetes.price;
+    cell.timeLabel.text = [timeFormat stringFromDate:fetes.time];
+    cell.dateLabel.text = [dateFormat stringFromDate:fetes.date];
+    
+    cell.nameLabel.textColor = [UIColor redColor];
+    cell.priceLabel.textColor = [UIColor grayColor];
 
    return cell;
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"showFeteDetail"]) {
+        
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        
+        FeteDetailViewController *detailViewController = segue.destinationViewController;
+        
+        detailViewController.fete = [[[FetesStore sharedStore] allFetes] objectAtIndex:indexPath.row];
+    }
+}
 
 /*
 // Override to support conditional editing of the table view.

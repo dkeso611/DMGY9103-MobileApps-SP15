@@ -25,7 +25,7 @@
              promo:(NSString *)promo_
           location:(NSString *)location_
               date:(NSDate *)date_
-              time:(NSString *)time_
+              time:(NSDate *)time_
            musicBy:(NSMutableArray *)musicBy_
              price:(NSString *)price_
           hashtags:(NSMutableArray *)hashtags_

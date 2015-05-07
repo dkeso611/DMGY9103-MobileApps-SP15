@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C209B0B81AFAF9F5006F2F9C /* calendar52.png in Resources */ = {isa = PBXBuildFile; fileRef = C209B0B71AFAF9F5006F2F9C /* calendar52.png */; };
 		C247C7F51AE873B00053D228 /* allwhite.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C247C7F41AE873B00053D228 /* allwhite.jpg */; };
 		C247C7F71AE874320053D228 /* taurus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C247C7F61AE874320053D228 /* taurus.jpg */; };
 		C24B4C331ADF5304008D8E85 /* glowparty.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C24B4C321ADF5304008D8E85 /* glowparty.jpg */; };
 		C26EEF6B1AF19A8E005138AE /* FetesStore.m in Sources */ = {isa = PBXBuildFile; fileRef = C26EEF6A1AF19A8E005138AE /* FetesStore.m */; };
+		C26EEF6E1AF1B0A9005138AE /* FeteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C26EEF6D1AF1B0A9005138AE /* FeteDetailViewController.m */; };
+		C26EEF701AF433DB005138AE /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C26EEF6F1AF43265005138AE /* fontawesome-webfont.ttf */; };
 		C2929D981ACC9E43005FFDC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2929D971ACC9E43005FFDC5 /* main.m */; };
 		C2929D9B1ACC9E43005FFDC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2929D9A1ACC9E43005FFDC5 /* AppDelegate.m */; };
 		C2929DA11ACC9E43005FFDC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2929D9F1ACC9E43005FFDC5 /* Main.storyboard */; };
@@ -34,11 +37,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C209B0B71AFAF9F5006F2F9C /* calendar52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar52.png; sourceTree = "<group>"; };
 		C247C7F41AE873B00053D228 /* allwhite.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = allwhite.jpg; sourceTree = "<group>"; };
 		C247C7F61AE874320053D228 /* taurus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = taurus.jpg; sourceTree = "<group>"; };
 		C24B4C321ADF5304008D8E85 /* glowparty.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = glowparty.jpg; sourceTree = "<group>"; };
 		C26EEF691AF19A8E005138AE /* FetesStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetesStore.h; sourceTree = "<group>"; };
 		C26EEF6A1AF19A8E005138AE /* FetesStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetesStore.m; sourceTree = "<group>"; };
+		C26EEF6C1AF1B0A9005138AE /* FeteDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeteDetailViewController.h; sourceTree = "<group>"; };
+		C26EEF6D1AF1B0A9005138AE /* FeteDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeteDetailViewController.m; sourceTree = "<group>"; };
+		C26EEF6F1AF43265005138AE /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
 		C2929D921ACC9E43005FFDC5 /* Fête.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fête.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2929D961ACC9E43005FFDC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2929D971ACC9E43005FFDC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -81,6 +88,7 @@
 		C24B4C311ADF4F61008D8E85 /* FetePictures */ = {
 			isa = PBXGroup;
 			children = (
+				C209B0B71AFAF9F5006F2F9C /* calendar52.png */,
 				C247C7F41AE873B00053D228 /* allwhite.jpg */,
 				C247C7F61AE874320053D228 /* taurus.jpg */,
 				C24B4C321ADF5304008D8E85 /* glowparty.jpg */,
@@ -115,12 +123,14 @@
 				C2929D9A1ACC9E43005FFDC5 /* AppDelegate.m */,
 				C2ADBDF51ADB407700AB6F8B /* aFete.h */,
 				C2ADBDF61ADB407700AB6F8B /* aFete.m */,
-				C2ADBDFB1ADCDA3E00AB6F8B /* FeteCell.h */,
-				C2ADBDFC1ADCDA3E00AB6F8B /* FeteCell.m */,
 				C26EEF691AF19A8E005138AE /* FetesStore.h */,
 				C26EEF6A1AF19A8E005138AE /* FetesStore.m */,
+				C2ADBDFB1ADCDA3E00AB6F8B /* FeteCell.h */,
+				C2ADBDFC1ADCDA3E00AB6F8B /* FeteCell.m */,
 				C2ADBDF21ADB2CC700AB6F8B /* UpcomingFetesTableViewController.h */,
 				C2ADBDF31ADB2CC700AB6F8B /* UpcomingFetesTableViewController.m */,
+				C26EEF6C1AF1B0A9005138AE /* FeteDetailViewController.h */,
+				C26EEF6D1AF1B0A9005138AE /* FeteDetailViewController.m */,
 				C2ADBDEC1ADB1F4000AB6F8B /* ThrowAFeteViewController.h */,
 				C2ADBDED1ADB1F4000AB6F8B /* ThrowAFeteViewController.m */,
 				C2929D9F1ACC9E43005FFDC5 /* Main.storyboard */,
@@ -134,6 +144,7 @@
 		C2929D951ACC9E43005FFDC5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C26EEF6F1AF43265005138AE /* fontawesome-webfont.ttf */,
 				C2929D961ACC9E43005FFDC5 /* Info.plist */,
 				C2929D971ACC9E43005FFDC5 /* main.m */,
 			);
@@ -237,7 +248,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C26EEF701AF433DB005138AE /* fontawesome-webfont.ttf in Resources */,
 				C2929DA11ACC9E43005FFDC5 /* Main.storyboard in Resources */,
+				C209B0B81AFAF9F5006F2F9C /* calendar52.png in Resources */,
 				C24B4C331ADF5304008D8E85 /* glowparty.jpg in Resources */,
 				C2929DA61ACC9E43005FFDC5 /* LaunchScreen.xib in Resources */,
 				C247C7F51AE873B00053D228 /* allwhite.jpg in Resources */,
@@ -265,6 +278,7 @@
 				C2ADBDF41ADB2CC700AB6F8B /* UpcomingFetesTableViewController.m in Sources */,
 				C2ADBDEE1ADB1F4000AB6F8B /* ThrowAFeteViewController.m in Sources */,
 				C2ADBDF71ADB407700AB6F8B /* aFete.m in Sources */,
+				C26EEF6E1AF1B0A9005138AE /* FeteDetailViewController.m in Sources */,
 				C2929D981ACC9E43005FFDC5 /* main.m in Sources */,
 				C2ADBDFD1ADCDA3E00AB6F8B /* FeteCell.m in Sources */,
 			);

@@ -17,7 +17,7 @@
 @property (nonatomic, strong) NSString *promo;
 @property (nonatomic, strong) NSString *location;
 @property (nonatomic, strong) NSDate *date;
-@property (nonatomic, strong) NSString *time;
+@property (nonatomic, strong) NSDate *time;
 @property (nonatomic, strong) NSMutableArray *musicBy;
 @property (nonatomic, strong) NSString *price;
 @property (nonatomic, strong) NSMutableArray *hashtags;
@@ -27,7 +27,7 @@
              promo:(NSString *)promo_
           location:(NSString *)location_
               date:(NSDate *)date_
-              time:(NSString *)time_
+              time:(NSDate *)time_
              musicBy:(NSMutableArray *)musicBy_
              price:(NSString *)price_
           hashtags:(NSMutableArray *)hashtags_;

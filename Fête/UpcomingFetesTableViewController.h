@@ -12,7 +12,7 @@
 
 @interface UpcomingFetesTableViewController : UITableViewController
 
-
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
 
 
 - (IBAction)unwindToList:(UIStoryboardSegue *)segue;
