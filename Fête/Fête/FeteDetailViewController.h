@@ -30,5 +30,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
 
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundLabel;
 
 @end

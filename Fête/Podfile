@@ -3,7 +3,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 pod 'AFNetworking', '~> 1.0'
 pod 'Parse'
 pod 'ParseUI'
-
+pod 'Firebase', '>= 2.2.2'
 
 
 

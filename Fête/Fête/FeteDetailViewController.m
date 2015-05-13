@@ -35,6 +35,8 @@
 
 @synthesize priceLabel;
 
+@synthesize backgroundLabel;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -63,6 +65,7 @@
     self.musicLabel.text = nil;
     self.timeLabel.text = [timeFormat stringFromDate:fetes.time];
     self.dateLabel.text = [dateFormat stringFromDate:fetes.date];
+    self.backgroundLabel.image = fetes.flyer;
     
  
     
