@@ -30,7 +30,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view.
+    
+    //Change navigation button text color
+    self.navigationController.navigationBar.tintColor = [UIColor redColor];
+    
+    //Change selected tab bar item color
+    self.tabBarController.tabBar.tintColor = [UIColor redColor];
+
     UIDatePicker *datePicker = [[UIDatePicker alloc] init];
     datePicker.datePickerMode = UIDatePickerModeDate;
     [self.dateField setInputView:datePicker];

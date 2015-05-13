@@ -26,7 +26,7 @@
 
 
 - (IBAction)unwindToList:(UIStoryboardSegue *)segue {
-    ThrowAFeteViewController *source = [segue sourceViewController];
+   
    
     
     
@@ -41,6 +41,11 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
+    //Change navigation button text color
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    
+    //Change selected tab bar item color
+    self.tabBarController.tabBar.tintColor = [UIColor redColor];
     
     [self loadInitialData];
 }

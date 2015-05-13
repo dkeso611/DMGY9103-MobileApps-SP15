@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
+#import <Firebase/Firebase.h>
 
 
 @interface AppDelegate ()
@@ -33,6 +34,13 @@
     [testObject saveInBackground];
     
     // ...
+    
+//    // Create a reference to a Firebase location
+//    Firebase *myRootRef = [[Firebase alloc] initWithUrl:@"https://myapp.firebasio-demo.com/"];
+//    // Write data to Firebase
+//    [myRootRef setValue:@"Do you have data? You'll love Firebase."];
+    
+    
 
     return YES;
 }
