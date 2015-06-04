@@ -166,14 +166,14 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="530"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qs5-PX-3zL">
-                                            <rect key="frame" x="274" y="284" width="53" height="24"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qs5-PX-3zL">
+                                            <rect key="frame" x="274" y="250" width="53" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" misplaced="YES" text="Promo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PII-V7-CC9">
-                                            <rect key="frame" x="277" y="316" width="46" height="18"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Promo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PII-V7-CC9">
+                                            <rect key="frame" x="277" y="282" width="46" height="18"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="18" id="bNv-2B-WT7"/>
                                                 <constraint firstAttribute="height" constant="21" id="eng-IN-yO3"/>
@@ -187,47 +187,47 @@
                                                 </mask>
                                             </variation>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Music" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTL-9Q-TEj">
-                                            <rect key="frame" x="279" y="395" width="42" height="28"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTL-9Q-TEj">
+                                            <rect key="frame" x="279" y="361" width="42" height="28"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" misplaced="YES" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tg-Mk-1Yj">
-                                            <rect key="frame" x="270" y="369" width="60" height="18"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tg-Mk-1Yj">
+                                            <rect key="frame" x="270" y="335" width="60" height="18"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Wy-Ld-8yv">
-                                            <rect key="frame" x="283" y="431" width="35" height="18"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Wy-Ld-8yv">
+                                            <rect key="frame" x="283" y="397" width="35" height="18"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="map25" translatesAutoresizingMaskIntoConstraints="NO" id="PIS-6W-ZVj">
-                                            <rect key="frame" x="239" y="369" width="30" height="20"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map25" translatesAutoresizingMaskIntoConstraints="NO" id="PIS-6W-ZVj">
+                                            <rect key="frame" x="239" y="335" width="30" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="30" id="W1w-Ol-dBc"/>
                                                 <constraint firstAttribute="height" constant="20" id="ujo-T1-PH0"/>
                                             </constraints>
                                         </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bull1" translatesAutoresizingMaskIntoConstraints="NO" id="Uov-55-5hE">
-                                            <rect key="frame" x="239" y="315" width="30" height="20"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bull1" translatesAutoresizingMaskIntoConstraints="NO" id="Uov-55-5hE">
+                                            <rect key="frame" x="239" y="281" width="30" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="9tm-lr-EZk"/>
                                                 <constraint firstAttribute="width" constant="30" id="Jp9-Ph-MV1"/>
                                             </constraints>
                                         </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" misplaced="YES" image="music67" translatesAutoresizingMaskIntoConstraints="NO" id="fYS-UV-L4u">
-                                            <rect key="frame" x="246" y="399" width="30" height="20"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="music67" translatesAutoresizingMaskIntoConstraints="NO" id="fYS-UV-L4u">
+                                            <rect key="frame" x="246" y="365" width="30" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="30" id="1MR-Nk-Kti"/>
                                                 <constraint firstAttribute="height" constant="20" id="Ufa-Eu-e88"/>
                                             </constraints>
                                         </imageView>
-                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UIm-JZ-duA">
-                                            <rect key="frame" x="8" y="342" width="584" height="19"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UIm-JZ-duA">
+                                            <rect key="frame" x="8" y="308" width="584" height="19"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar52" translatesAutoresizingMaskIntoConstraints="NO" id="Tar-Js-3Uq">
                                                     <rect key="frame" x="40" y="-1" width="30" height="20"/>
@@ -278,8 +278,8 @@
                                                 </mask>
                                             </variation>
                                         </view>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="money10" translatesAutoresizingMaskIntoConstraints="NO" id="c2S-hU-DSd">
-                                            <rect key="frame" x="246" y="431" width="30" height="20"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="money10" translatesAutoresizingMaskIntoConstraints="NO" id="c2S-hU-DSd">
+                                            <rect key="frame" x="246" y="397" width="30" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="59k-Ig-0MI"/>
                                                 <constraint firstAttribute="width" constant="30" id="6qV-Qc-UCY"/>
@@ -539,7 +539,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Submit" id="KoF-Gm-rGD">
                             <connections>
-                                <action selector="submitButton:" destination="l98-sg-wlU" id="QTd-4H-eyZ"/>
+                                <action selector="submit:" destination="l98-sg-wlU" id="W13-zM-wOi"/>
                                 <segue destination="jLA-eA-o26" kind="unwind" unwindAction="unwindToList:" id="HW2-aC-BLQ"/>
                             </connections>
                         </barButtonItem>
@@ -555,7 +555,7 @@
                         <outlet property="nameField" destination="2s1-s0-nl5" id="ouF-sF-hGQ"/>
                         <outlet property="priceField" destination="Lgx-uq-A5e" id="Gx8-VB-8ha"/>
                         <outlet property="promoField" destination="z8f-2c-2XU" id="gWU-ya-mT0"/>
-                        <outlet property="submitButton" destination="KoF-Gm-rGD" id="OD5-5h-ds9"/>
+                        <outlet property="submitButton" destination="KoF-Gm-rGD" id="pcG-B3-xTd"/>
                         <outlet property="timeField" destination="gCw-oD-5Re" id="3dR-pE-uMv"/>
                     </connections>
                 </viewController>

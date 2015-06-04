@@ -8,6 +8,7 @@
 
 #import "ThrowAFeteViewController.h"
 #import "aFete.h"
+#import <Parse.h>
 
 @interface ThrowAFeteViewController ()
 
@@ -38,15 +39,85 @@
     
     //Change selected tab bar item color
     self.tabBarController.tabBar.tintColor = [UIColor redColor];
+    
+    //Datepicker toolbar customization
+    UIToolbar* toolbar = [[UIToolbar alloc] init];
+    toolbar.tintColor = [UIColor redColor];
+    toolbar.barTintColor = nil;
+    toolbar.translucent = YES;
+    [toolbar sizeToFit];
+    
+    
+    //Toolbar buttons
+    UIBarButtonItem* doneButton = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStylePlain  target:self action:@selector(doneAction:)];
+
+    UIBarButtonItem* cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
+                                                                                  target:self
+                                                                                  action:@selector(cancelAction:)];
+    UIBarButtonItem* flexibleSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+                                                                                   target:nil
+                                                                                   action:nil];
+    [toolbar setItems:@[cancelButton, flexibleSpace, doneButton]];
+    
+    self.dateField.inputAccessoryView = toolbar;
+//    self.timeField.inputAccessoryView = toolbar;
+    
+    
 
     UIDatePicker *datePicker = [[UIDatePicker alloc] init];
-    datePicker.datePickerMode = UIDatePickerModeDate;
+   
+    [datePicker setMinimumDate:[NSDate date]];
+    [datePicker setMinuteInterval:5];
+    datePicker.datePickerMode = UIDatePickerModeDateAndTime;
+    [datePicker addTarget:self action:@selector(updateTextField:) forControlEvents:UIControlEventValueChanged];
     [self.dateField setInputView:datePicker];
-    UIDatePicker *timePicker = [[UIDatePicker alloc]init];
-    timePicker.datePickerMode = UIDatePickerModeTime;
-    [self.timeField setInputView:timePicker];
+
+
+    
+//    UIDatePicker *timePicker = [[UIDatePicker alloc]init];
+//    [timePicker setMinuteInterval:30];
+//    timePicker.datePickerMode = UIDatePickerModeTime;
+//    [timePicker addTarget:self action:@selector(updateTextField:) forControlEvents:UIControlEventValueChanged];
+//    [self.timeField setInputView:timePicker];
+    
     
 }
+
+- (void)doneAction:(id)sender
+{
+    UIDatePicker* datePicker = (UIDatePicker*)[self.dateField inputView];
+    NSDate *dateSelected = datePicker.date;
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"EEE, MMM d, yyyy"];
+    
+    NSDateFormatter *timeFormat = [[NSDateFormatter alloc] init];
+    [timeFormat setDateFormat:@"h:mm a"];
+    
+    self.dateField.text = [dateFormat stringFromDate:dateSelected];
+    self.timeField.text = [timeFormat stringFromDate:dateSelected];
+    
+    [self.dateField resignFirstResponder];
+    
+//    UIDatePicker* timePicker = (UIDatePicker*)[self.timeField inputView];
+//    NSDate *timeSelected = timePicker.date;
+//    self.timeField.text = [timeFormat stringFromDate:timeSelected];
+//  
+//    [self.timeField resignFirstResponder];
+}
+
+- (void)cancelAction:(id)sender
+{
+    [self.dateField resignFirstResponder];
+    [self.timeField resignFirstResponder];
+    
+    
+}
+
+- (void) updateTextField:(id)sender
+{
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -57,24 +128,40 @@
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    if (sender != self.submitButton) return;
+    if (sender == self.submitButton)
     
-    if (self.nameField.text.length > 0) {
-        self.myFete = [[aFete alloc] initWithName:self.nameField.text
-                                             flyer:nil
-                                             promo:self.promoField.text
-                                          location:self.locationField.text
-                                              date:nil
-                                              time:nil
-                                           musicBy:nil
-                                             price:self.priceField.text
-                                          hashtags:nil];
+    {
         
-    }
-}
-
+    
+    PFObject *newFete = [PFObject objectWithClassName:@"Fete"];
+    newFete[@"name"] = nameField.text;
+    newFete[@"flyer"] = @"";
+    newFete[@"promo"] = promoField.text;
+    newFete[@"location"] = locationField.text;
+    newFete[@"date"] = dateField.text;
+    newFete[@"time"] = timeField.text;
+    newFete[@"musicBy"] = @"";
+    newFete[@"price"] = priceField.text;
+    newFete[@"hashtags"] = @"";
+    
+    [newFete saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        
+        if (succeeded == YES) {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Get Ready to Fête!" message:@"Your fête has been saved" delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil];
+            [alert show];
+        }
+        else
+        {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error!" message:@"Your fête has not been saved" delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil];
+            [alert show];
+        }
+        
+    }];
+    }}}
 
 @end

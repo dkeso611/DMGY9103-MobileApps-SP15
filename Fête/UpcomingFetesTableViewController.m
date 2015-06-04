@@ -47,6 +47,11 @@
     //Change selected tab bar item color
     self.tabBarController.tabBar.tintColor = [UIColor redColor];
     
+  
+    // The InBackground methods are asynchronous, so any code after this will run
+    // immediately.  Any code that depends on the query result should be moved
+    // inside the completion block above.
+    
     [self loadInitialData];
 }
 

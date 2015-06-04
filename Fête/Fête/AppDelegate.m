@@ -29,17 +29,32 @@
      //[Optional] Track statistics around application opens.
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
-    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
-    testObject[@"dk"] = @"suru";
-    [testObject saveInBackground];
+    PFObject *fete = [PFObject objectWithClassName:@"Fete"];
+    fete[@"name"] = @"suru";
+    fete[@"flyer"] = @"NSNull";
+    fete[@"promo"] = @"NSNull";
+    fete[@"location"] = @"NSNull" ;
+    fete[@"date"] = @"NSNull";
+    fete[@"time"] = @"NSNull";
+    fete[@"musicBy"] = @"NSNull";
+    fete[@"price"] = @"NSNull";
+    fete[@"hashtags"] = @"NSNull";
+    
+
+    [fete saveInBackground];
     
     // ...
     
 //    // Create a reference to a Firebase location
-//    Firebase *myRootRef = [[Firebase alloc] initWithUrl:@"https://myapp.firebasio-demo.com/"];
+//    Firebase *myRootRef = [[Firebase alloc] initWithUrl:@"https://fete.firebaseio.com"];
+//    
 //    // Write data to Firebase
 //    [myRootRef setValue:@"Do you have data? You'll love Firebase."];
-    
+//    
+//    // Read data and react to changes
+//    [myRootRef observeEventType:FEventTypeValue withBlock:^(FDataSnapshot *snapshot) {
+//        NSLog(@"%@ -> %@", snapshot.key, snapshot.value);
+//    }];
     
 
     return YES;
