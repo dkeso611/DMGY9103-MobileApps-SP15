@@ -27,21 +27,8 @@
                   clientKey:@"Ar6tPjxyoaFjEICE5kLx8SI4FpDFdcMuDQPcv38x"];
     
      //[Optional] Track statistics around application opens.
-    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+//    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
-    PFObject *fete = [PFObject objectWithClassName:@"Fete"];
-    fete[@"name"] = @"suru";
-    fete[@"flyer"] = @"NSNull";
-    fete[@"promo"] = @"NSNull";
-    fete[@"location"] = @"NSNull" ;
-    fete[@"date"] = @"NSNull";
-    fete[@"time"] = @"NSNull";
-    fete[@"musicBy"] = @"NSNull";
-    fete[@"price"] = @"NSNull";
-    fete[@"hashtags"] = @"NSNull";
-    
-
-    [fete saveInBackground];
     
     // ...
     

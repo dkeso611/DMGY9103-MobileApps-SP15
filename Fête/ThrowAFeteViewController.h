@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ThrowAFeteViewController : UIViewController
+
+@interface ThrowAFeteViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
+   
+}
 
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
 
@@ -19,8 +22,17 @@
 @property (weak, nonatomic) IBOutlet UITextField *priceField;
 
 @property (weak, nonatomic) IBOutlet UITextField *locationField;
+
 @property (weak, nonatomic) IBOutlet UITextField *dateField;
+
 @property (weak, nonatomic) IBOutlet UITextField *timeField;
 
+@property (weak, nonatomic) IBOutlet UIImageView *flyer;
+@property (weak, nonatomic) IBOutlet UIButton *uploadButton;
+
+@property (strong, nonatomic)NSData *imageData;
+
+
+- (IBAction)upload:(id)sender;
 
 @end
