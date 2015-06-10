@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 Suru Media. All rights reserved.
 //
 
-#import "aFete.h"
+#import "Fete.h"
 
-@implementation aFete
+@implementation Fete
 
 @synthesize name;
 @synthesize flyer;
@@ -21,11 +21,11 @@
 @synthesize hashtags;
 
 - (id)initWithName:(NSString *)name_
-             flyer:(UIImage *)flyer_
+             flyer:(PFFile *)flyer_
              promo:(NSString *)promo_
           location:(NSString *)location_
-              date:(NSDate *)date_
-              time:(NSDate *)time_
+              date:(NSString *)date_
+              time:(NSString *)time_
            musicBy:(NSMutableArray *)musicBy_
              price:(NSString *)price_
           hashtags:(NSMutableArray *)hashtags_

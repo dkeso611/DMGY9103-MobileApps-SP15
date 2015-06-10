@@ -8,11 +8,12 @@
 
 #import <UIKit/UIViewController.h>
 #import <UIKit/UIKit.h>
+#import <ParseUI.h>
+#import <Parse.h>
 
 
+@interface UpcomingFetesTableViewController : PFQueryTableViewController
 
-
-@interface UpcomingFetesTableViewController : UITableViewController
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 

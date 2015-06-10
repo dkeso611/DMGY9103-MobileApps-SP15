@@ -7,14 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ParseUI.h>
+#import <Parse.h>
 
-@class aFete;
+@class Fete;
 
 @interface FeteDetailViewController : UIViewController
 
-@property (nonatomic, strong) aFete *fete;
+@property (nonatomic, strong) Fete *fete;
 
-@property (weak, nonatomic) IBOutlet UIImageView *flyerLabel;
+
+
+@property (weak, nonatomic) IBOutlet PFImageView* flyerLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *promoLabel;
 
@@ -30,6 +34,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
 
-@property (weak, nonatomic) IBOutlet UIImageView *backgroundLabel;
+@property (weak, nonatomic) IBOutlet PFImageView *backgroundLabel;
 
 @end

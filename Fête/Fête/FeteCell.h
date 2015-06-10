@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "UpcomingFetesTableViewController.h"
+#import <Parse.h>
+#import <ParseUI.h>
 
-
-@interface FeteCell : UITableViewCell
+@interface FeteCell : PFTableViewCell
 
 
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
@@ -23,7 +24,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 
-@property (weak, nonatomic) IBOutlet UIImageView *flyerLabel;
+@property (weak, nonatomic) IBOutlet PFImageView *flyerLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
 

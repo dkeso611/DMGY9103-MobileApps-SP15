@@ -7,9 +7,10 @@
 //
 
 #import "FeteDetailViewController.h"
-#import "aFete.h"
+#import "Fete.h"
 #import "FetesStore.h"
 #import "UpcomingFetesTableViewController.h"
+#import <ParseUI.h>
 
 @interface FeteDetailViewController ()
 
@@ -37,12 +38,14 @@
 
 @synthesize backgroundLabel;
 
+@synthesize fete;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     
     // Do any additional setup after loading the view.
-    
+    self.title = fete.name;
 
 }
 
@@ -55,20 +58,17 @@
     NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
     [dateFormat setDateFormat:@"EEE, MMM d"];
     
-    aFete *fetes = self.fete;
+//    Fete *fetes = self.fete;
     
-    self.flyerLabel.image = fetes.flyer;
-    self.nameLabel.text = fetes.name;
-    self.promoLabel.text = fetes.promo;
-    self.locationLabel.text = fetes.location;
-    self.priceLabel.text = fetes.price;
+    self.flyerLabel.file = fete.flyer;
+    self.nameLabel.text = fete.name;
+    self.promoLabel.text = fete.promo;
+    self.locationLabel.text = fete.location;
+    self.priceLabel.text = fete.price;
     self.musicLabel.text = nil;
-    self.timeLabel.text = [timeFormat stringFromDate:fetes.time];
-    self.dateLabel.text = [dateFormat stringFromDate:fetes.date];
-    self.backgroundLabel.image = fetes.flyer;
-    
- 
-    
+    self.timeLabel.text = fete.time; //[timeFormat stringFromDate:fete.time];
+    self.dateLabel.text = fete.date;//[dateFormat stringFromDate:fete.date];
+    self.backgroundLabel.file = fete.flyer;
 
 }
 
@@ -77,11 +77,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)setItem:(aFete*)fete
-{
-    _fete = fete;
-    self.navigationItem.title = _fete.name;
-}
+//- (void)setItem:(Fete*)fete
+//{
+//    
+//    self.navigationItem.title = fete.name;
+//}
 
 
 

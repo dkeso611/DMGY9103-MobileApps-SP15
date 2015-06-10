@@ -7,14 +7,14 @@
 //
 
 #import "ThrowAFeteViewController.h"
-#import "aFete.h"
+#import "Fete.h"
 #import <Parse.h>
 #import <MBProgressHUD.h>
 
 
 @interface ThrowAFeteViewController ()
 
-@property aFete *myFete;
+@property Fete *myFete;
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *submitButton;
 

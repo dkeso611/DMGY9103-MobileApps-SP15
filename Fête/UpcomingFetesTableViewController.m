@@ -7,7 +7,7 @@
 //
 
 #import "UpcomingFetesTableViewController.h"
-#import "aFete.h"
+#import "Fete.h"
 #import "FeteCell.h"
 #import "FetesStore.h"
 #import "FeteDetailViewController.h"
@@ -69,48 +69,119 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-//#warning Potentially incomplete method implementation.
-   // Return the number of sections.
-   return 1;
+- (id)initWithCoder:(NSCoder *)aCoder
+{
+    self = [super initWithCoder:aCoder];
+    if (self) {
+        // The className to query on
+        self.parseClassName = @"Fete";
+        
+        // The key of the PFObject to display in the label of the default cell style
+        self.textKey = @"name";
+        
+        // Whether the built-in pull-to-refresh is enabled
+        self.pullToRefreshEnabled = YES;
+        
+        // Whether the built-in pagination is enabled
+        self.paginationEnabled = NO;
+    }
+    return self;
 }
 
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-////#warning Incomplete method implementation.
-   // Return the number of rows in the section.
-    return [[[FetesStore sharedStore] allFetes] count];
+- (PFQuery *)queryForTable
+{
+    PFQuery *query = [PFQuery queryWithClassName:self.parseClassName];
+    
+    return query;
 }
 
-
-- (UITableViewCell *)tableView:(UITableView *)tableView
-         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (PFTableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath object:(PFObject *)object{
     
-    FeteCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FeteCell" forIndexPath:indexPath];
     
-
-    // Configure the cell...
+    FeteCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FeteCell"];
+    
+    if (cell == nil) {
+        cell = [[FeteCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"FeteCell"];
+    }
+    
+    // Configure the cell
     
     NSDateFormatter *timeFormat = [[NSDateFormatter alloc] init];
-    [timeFormat setDateFormat:@"h:mm a"];
-    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
-    [dateFormat setDateFormat:@"EEE, MMM d"];
+        [timeFormat setDateFormat:@"h:mm a"];
+        NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+        [dateFormat setDateFormat:@"EEE, MMM d"];
+    
+//    PFFile *thumbnail = [fete objectForKey:@"flyer"];
+//    PFImageView *thumbnailImageView = (PFImageView*)[cell viewWithTag:100];
+//    thumbnailImageView.image = [UIImage imageNamed:@"placeholder.jpg"];
+//    thumbnailImageView.file = thumbnail;
+//    [thumbnailImageView loadInBackground];
     
     
-    aFete *fetes = [[[FetesStore sharedStore] allFetes] objectAtIndex:indexPath.row];
-    cell.nameLabel.text = fetes.name;
-    cell.flyerLabel.image = fetes.flyer;
-    cell.locationLabel.text = fetes.location;
-    cell.promoLabel.text = fetes.promo;
-    cell.priceLabel.text = fetes.price;
-    cell.timeLabel.text = [timeFormat stringFromDate:fetes.time];
-    cell.dateLabel.text = [dateFormat stringFromDate:fetes.date];
+        cell.nameLabel.text = [object objectForKey:@"name"];
     
-    cell.nameLabel.textColor = [UIColor redColor];
-    cell.priceLabel.textColor = [UIColor grayColor];
-
-   return cell;
+        PFFile *thumbnail = [object objectForKey:@"flyer"];
+        cell.flyerLabel.image = [UIImage imageNamed:@"placeholder.jpg"];
+        cell.flyerLabel.file = thumbnail;
+        [cell.flyerLabel loadInBackground];
+    
+        cell.locationLabel.text = [object objectForKey:@"location"];
+        cell.promoLabel.text = [object objectForKey:@"promo"];
+        cell.priceLabel.text = [object objectForKey:@"price"];
+        cell.timeLabel.text = [object objectForKey:@"time"];
+    
+        cell.dateLabel.text = [object objectForKey:@"date"];
+        //cell.timeLabel.text = [timeFormat stringFromDate:fetes.time];
+        //cell.dateLabel.text = [dateFormat stringFromDate:fetes.date];
+    
+        cell.nameLabel.textColor = [UIColor redColor];
+        cell.priceLabel.textColor = [UIColor grayColor];
+    
+    return cell;
 }
+
+//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+////#warning Potentially incomplete method implementation.
+//   // Return the number of sections.
+//   return 1;
+//}
+//
+//
+//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+//////#warning Incomplete method implementation.
+//   // Return the number of rows in the section.
+//    return [[[FetesStore sharedStore] allFetes] count];
+//}
+//
+//
+//- (UITableViewCell *)tableView:(UITableView *)tableView
+//         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    
+//    FeteCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FeteCell" forIndexPath:indexPath];
+//    
+//
+//    // Configure the cell...
+//    
+//    NSDateFormatter *timeFormat = [[NSDateFormatter alloc] init];
+//    [timeFormat setDateFormat:@"h:mm a"];
+//    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+//    [dateFormat setDateFormat:@"EEE, MMM d"];
+//    
+//    
+//    aFete *fetes = [[[FetesStore sharedStore] allFetes] objectAtIndex:indexPath.row];
+//    cell.nameLabel.text = fetes.name;
+//    cell.flyerLabel.image = fetes.flyer;
+//    cell.locationLabel.text = fetes.location;
+//    cell.promoLabel.text = fetes.promo;
+//    cell.priceLabel.text = fetes.price;
+//    cell.timeLabel.text = [timeFormat stringFromDate:fetes.time];
+//    cell.dateLabel.text = [dateFormat stringFromDate:fetes.date];
+//    
+//    cell.nameLabel.textColor = [UIColor redColor];
+//    cell.priceLabel.textColor = [UIColor grayColor];
+//
+//   return cell;
+//}
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"showFeteDetail"]) {
@@ -119,7 +190,19 @@
         
         FeteDetailViewController *detailViewController = segue.destinationViewController;
         
-        detailViewController.fete = [[[FetesStore sharedStore] allFetes] objectAtIndex:indexPath.row];
+        PFObject *object = [self.objects objectAtIndex:indexPath.row];
+        Fete *fete = [[Fete alloc] init];
+        fete.name = [object objectForKey:@"name"];
+        fete.flyer = [object objectForKey:@"flyer"];
+        fete.promo = [object objectForKey:@"promo"];
+        fete.price = [object objectForKey:@"price"];
+        fete.location = [object objectForKey:@"location"];
+        fete.musicBy = [object objectForKey:@"musicBy"];
+        fete.time = [object objectForKey:@"time"];
+        fete.date = [object objectForKey:@"date"];
+        
+        
+        detailViewController.fete = fete;
     }
 }
 

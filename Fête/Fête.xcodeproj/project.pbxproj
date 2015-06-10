@@ -23,7 +23,7 @@
 		C2929DB21ACC9E43005FFDC5 /* Fe_teTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2929DB11ACC9E43005FFDC5 /* Fe_teTests.m */; };
 		C2ADBDEE1ADB1F4000AB6F8B /* ThrowAFeteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2ADBDED1ADB1F4000AB6F8B /* ThrowAFeteViewController.m */; };
 		C2ADBDF41ADB2CC700AB6F8B /* UpcomingFetesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2ADBDF31ADB2CC700AB6F8B /* UpcomingFetesTableViewController.m */; };
-		C2ADBDF71ADB407700AB6F8B /* aFete.m in Sources */ = {isa = PBXBuildFile; fileRef = C2ADBDF61ADB407700AB6F8B /* aFete.m */; };
+		C2ADBDF71ADB407700AB6F8B /* Fete.m in Sources */ = {isa = PBXBuildFile; fileRef = C2ADBDF61ADB407700AB6F8B /* Fete.m */; };
 		C2ADBDFD1ADCDA3E00AB6F8B /* FeteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2ADBDFC1ADCDA3E00AB6F8B /* FeteCell.m */; };
 /* End PBXBuildFile section */
 
@@ -65,8 +65,8 @@
 		C2ADBDED1ADB1F4000AB6F8B /* ThrowAFeteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThrowAFeteViewController.m; path = ../ThrowAFeteViewController.m; sourceTree = "<group>"; };
 		C2ADBDF21ADB2CC700AB6F8B /* UpcomingFetesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UpcomingFetesTableViewController.h; path = ../UpcomingFetesTableViewController.h; sourceTree = "<group>"; };
 		C2ADBDF31ADB2CC700AB6F8B /* UpcomingFetesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UpcomingFetesTableViewController.m; path = ../UpcomingFetesTableViewController.m; sourceTree = "<group>"; };
-		C2ADBDF51ADB407700AB6F8B /* aFete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aFete.h; sourceTree = "<group>"; };
-		C2ADBDF61ADB407700AB6F8B /* aFete.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = aFete.m; sourceTree = "<group>"; };
+		C2ADBDF51ADB407700AB6F8B /* Fete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fete.h; sourceTree = "<group>"; };
+		C2ADBDF61ADB407700AB6F8B /* Fete.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fete.m; sourceTree = "<group>"; };
 		C2ADBDFB1ADCDA3E00AB6F8B /* FeteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeteCell.h; sourceTree = "<group>"; };
 		C2ADBDFC1ADCDA3E00AB6F8B /* FeteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeteCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,8 +145,8 @@
 				C24B4C311ADF4F61008D8E85 /* FetePictures */,
 				C2929D991ACC9E43005FFDC5 /* AppDelegate.h */,
 				C2929D9A1ACC9E43005FFDC5 /* AppDelegate.m */,
-				C2ADBDF51ADB407700AB6F8B /* aFete.h */,
-				C2ADBDF61ADB407700AB6F8B /* aFete.m */,
+				C2ADBDF51ADB407700AB6F8B /* Fete.h */,
+				C2ADBDF61ADB407700AB6F8B /* Fete.m */,
 				C26EEF691AF19A8E005138AE /* FetesStore.h */,
 				C26EEF6A1AF19A8E005138AE /* FetesStore.m */,
 				C2ADBDFB1ADCDA3E00AB6F8B /* FeteCell.h */,
@@ -336,7 +336,7 @@
 				C2929D9B1ACC9E43005FFDC5 /* AppDelegate.m in Sources */,
 				C2ADBDF41ADB2CC700AB6F8B /* UpcomingFetesTableViewController.m in Sources */,
 				C2ADBDEE1ADB1F4000AB6F8B /* ThrowAFeteViewController.m in Sources */,
-				C2ADBDF71ADB407700AB6F8B /* aFete.m in Sources */,
+				C2ADBDF71ADB407700AB6F8B /* Fete.m in Sources */,
 				C26EEF6E1AF1B0A9005138AE /* FeteDetailViewController.m in Sources */,
 				C2929D981ACC9E43005FFDC5 /* main.m in Sources */,
 				C2ADBDFD1ADCDA3E00AB6F8B /* FeteCell.m in Sources */,
