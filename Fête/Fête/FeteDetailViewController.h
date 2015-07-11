@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <ParseUI.h>
 #import <Parse.h>
+#import <SSBouncyButton.h>
 
 @class Fete;
 
@@ -35,5 +36,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
 
 @property (weak, nonatomic) IBOutlet PFImageView *backgroundLabel;
+
+@property (strong, nonatomic) IBOutlet SSBouncyButton *goButton;
+
 
 @end

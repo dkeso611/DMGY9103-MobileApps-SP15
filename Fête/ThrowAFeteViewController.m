@@ -9,6 +9,7 @@
 #import "ThrowAFeteViewController.h"
 #import "Fete.h"
 #import <Parse.h>
+#import <MobileCoreServices/MobileCoreServices.h>
 #import <MBProgressHUD.h>
 
 
@@ -87,14 +88,12 @@
     
 }
 
+
+
 - (BOOL)textFieldShouldBeginEditing:(UITextField*)textField
 {
     if (nameField.text != nil){
     textField.returnKeyType = UIReturnKeyDone;
-    }
-    else {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error!" message:@"Please name your Fête!" delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil];
-        [alert show];
         
     }
     
@@ -108,6 +107,9 @@
     
     return YES;
 }
+
+
+
 
 - (void)doneAction:(id)sender
 {
@@ -218,7 +220,6 @@
             MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
             hud.mode = MBProgressHUDModeAnnularDeterminate;
             hud.labelText = @"Uploading";
-            
             [hud show:YES];
             
             

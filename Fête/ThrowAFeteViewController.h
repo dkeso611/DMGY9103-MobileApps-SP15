@@ -28,6 +28,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *timeField;
 
 @property (weak, nonatomic) IBOutlet UIImageView *flyer;
+
 @property (weak, nonatomic) IBOutlet UIButton *uploadButton;
 
 @property (strong, nonatomic)NSData *imageData;

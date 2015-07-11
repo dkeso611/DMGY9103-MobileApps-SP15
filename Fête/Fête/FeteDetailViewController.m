@@ -11,8 +11,12 @@
 #import "FetesStore.h"
 #import "UpcomingFetesTableViewController.h"
 #import <ParseUI.h>
+#import "RSVPViewController.h"
+
 
 @interface FeteDetailViewController ()
+
+@property (nonatomic, strong) NSUserDefaults *defaults;
 
 
 @end
@@ -40,14 +44,29 @@
 
 @synthesize fete;
 
+@synthesize goButton;
+
+static CGFloat centerX;
+static CGFloat centerY;
+
+
+
 - (void)viewDidLoad {
+    
+    
     [super viewDidLoad];
+    
+    self.defaults = [NSUserDefaults standardUserDefaults];
     
     
     // Do any additional setup after loading the view.
     self.title = fete.name;
+    
+    
 
+    
 }
+
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -69,13 +88,67 @@
     self.timeLabel.text = fete.time; //[timeFormat stringFromDate:fete.time];
     self.dateLabel.text = fete.date;//[dateFormat stringFromDate:fete.date];
     self.backgroundLabel.file = fete.flyer;
+    
+    
+    // SSBouncyButton
+    //    [self.goingButton setTitle:@"Follow" forState:UIControlStateNormal];
+    //    [self.goingButton setTitle:@"Following" forState:UIControlStateSelected];
+    //    [self.goingButton addTarget:self action:@selector(buttonDidPress:) forControlEvents:UIControlEventTouchUpInside];
+    //    [self.goingButton addSubview:goingButton];
+    
+    CGSize screenSize = [UIScreen mainScreen].bounds.size;
+    centerX = screenSize.width / 2;
+    centerY = screenSize.height / 2;
+    // tintColor, cornerRadius
+    //    SSBouncyButton *customButton
+//    self.goButton = [[SSBouncyButton alloc] initWithFrame:CGRectMake(0, 0, 100, 40)];
+    
+    self.goButton = [[SSBouncyButton alloc]initWithFrame:CGRectMake(0, 0, 100, 40)];
+    self.goButton.center = CGPointMake(screenSize.width/2, screenSize.height - 80);
+    goButton.tintColor = [UIColor redColor];
+    goButton.cornerRadius = 5;
+    [goButton setTitle:@"Go!" forState:UIControlStateNormal];
+    [goButton setTitle:@"Going!" forState:UIControlStateSelected];
+    [goButton addTarget:self action:@selector(buttonDidPress:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:goButton];
 
+    
+    
+}
+- (void)buttonDidPress:(UIButton *)button
+{
+
+    button.selected = !button.selected;
+    
+//    UILabel *label = [[UILabel alloc] init];
+//    label.text = @"Try touch long, too.";
+//    label.textColor = [UIColor lightGrayColor];
+//    label.font = [UIFont systemFontOfSize:12];
+//    label.tag = 999;
+//    [label sizeToFit];
+//    [self.view addSubview:label];
+//    if (![self.view viewWithTag:999]) {
+//        UILabel *label = [[UILabel alloc] init];
+//        label.text = @"Try touch long, too.";
+//        label.textColor = [UIColor lightGrayColor];
+//        label.font = [UIFont systemFontOfSize:12];
+//        label.tag = 999;
+//        [label sizeToFit];
+//        [self.view addSubview:label];
+//    }
+    
+//    NSLog(@"%@", fete.objectId);
+//
+//    [self.defaults setObject:fete forKey:[fete objectForKey:@"objectId"]];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
 
 //- (void)setItem:(Fete*)fete
 //{

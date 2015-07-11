@@ -9,13 +9,16 @@
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
 #import <Firebase/Firebase.h>
+#import <SSBouncyButton/SSBouncyButton.h>
 
 
 @interface AppDelegate ()
 
 @end
 
+
 @implementation AppDelegate
+
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -25,6 +28,8 @@
      //Initialize Parse.
     [Parse setApplicationId:@"UCmpDOpM6VJcGqlqji7Si3MGBiIty6D21BZGx48D"
                   clientKey:@"Ar6tPjxyoaFjEICE5kLx8SI4FpDFdcMuDQPcv38x"];
+    
+    
     
      //[Optional] Track statistics around application opens.
 //    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];

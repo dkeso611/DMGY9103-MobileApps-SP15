@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9EE22FAEACBD30F2C07BFE6F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12914FB1C4F82A31C10C0D7D /* libPods.a */; };
 		C209B0B81AFAF9F5006F2F9C /* calendar52.png in Resources */ = {isa = PBXBuildFile; fileRef = C209B0B71AFAF9F5006F2F9C /* calendar52.png */; };
+		C23639311B50A542008E82DC /* RSVPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23639301B50A542008E82DC /* RSVPViewController.m */; };
 		C247C7F51AE873B00053D228 /* allwhite.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C247C7F41AE873B00053D228 /* allwhite.jpg */; };
 		C247C7F71AE874320053D228 /* taurus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C247C7F61AE874320053D228 /* taurus.jpg */; };
 		C24B4C331ADF5304008D8E85 /* glowparty.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C24B4C321ADF5304008D8E85 /* glowparty.jpg */; };
@@ -42,6 +43,8 @@
 		12914FB1C4F82A31C10C0D7D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D6E13D252140D6671908C5F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C209B0B71AFAF9F5006F2F9C /* calendar52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar52.png; sourceTree = "<group>"; };
+		C236392F1B50A542008E82DC /* RSVPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSVPViewController.h; sourceTree = "<group>"; };
+		C23639301B50A542008E82DC /* RSVPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSVPViewController.m; sourceTree = "<group>"; };
 		C247C7F41AE873B00053D228 /* allwhite.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = allwhite.jpg; sourceTree = "<group>"; };
 		C247C7F61AE874320053D228 /* taurus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = taurus.jpg; sourceTree = "<group>"; };
 		C24B4C321ADF5304008D8E85 /* glowparty.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = glowparty.jpg; sourceTree = "<group>"; };
@@ -158,6 +161,8 @@
 				C2ADBDEC1ADB1F4000AB6F8B /* ThrowAFeteViewController.h */,
 				C2ADBDED1ADB1F4000AB6F8B /* ThrowAFeteViewController.m */,
 				C2929D9F1ACC9E43005FFDC5 /* Main.storyboard */,
+				C236392F1B50A542008E82DC /* RSVPViewController.h */,
+				C23639301B50A542008E82DC /* RSVPViewController.m */,
 				C2929DA21ACC9E43005FFDC5 /* Images.xcassets */,
 				C2929DA41ACC9E43005FFDC5 /* LaunchScreen.xib */,
 				C2929D951ACC9E43005FFDC5 /* Supporting Files */,
@@ -338,6 +343,7 @@
 				C2ADBDEE1ADB1F4000AB6F8B /* ThrowAFeteViewController.m in Sources */,
 				C2ADBDF71ADB407700AB6F8B /* Fete.m in Sources */,
 				C26EEF6E1AF1B0A9005138AE /* FeteDetailViewController.m in Sources */,
+				C23639311B50A542008E82DC /* RSVPViewController.m in Sources */,
 				C2929D981ACC9E43005FFDC5 /* main.m in Sources */,
 				C2ADBDFD1ADCDA3E00AB6F8B /* FeteCell.m in Sources */,
 			);

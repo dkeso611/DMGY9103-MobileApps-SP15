@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-BRYSerialAnimationQueue.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Bolts.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -29,6 +34,21 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-SSBouncyButton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-UIColor-Hex.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-UIImage+BetterAdditions.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,32 +57,52 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>82DCEF782C8D1CFD5E05ABCA</key>
+		<key>0403B6CBBB99156705B86545</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>86D1A6414FA8BDCB151BAF8D</key>
+		<key>1585BC0C2B50B7EADEE551ED</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A9127A4981E9FE4BECB00E44</key>
+		<key>1A31F3D8E0CF0DA284ABB3F6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AA0EB5BC4F8D195C0041914D</key>
+		<key>1A44583D522FB8AF96151D0E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E3F01699D912E3653A3530FE</key>
+		<key>333C0915976149C986FBAA65</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F2DDD73B13E490D1DB8E9734</key>
+		<key>46D89C2656ABF0A7A22EDB3D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5AB33EC5F6A61E6491BEBD6D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7C21D22770B98996C1727552</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C34C766261CBF3551212910B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F5CF2DEC50798905838C30E9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
